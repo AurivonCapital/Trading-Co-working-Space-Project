@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trading Suite | Aurivon Capital</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Main Background: The Realistic Office Photo */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                        url('office-background.jpg'); /* Ensure your photo is named this in GitHub */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Futuristic Header Styling from your Poster */
+        .brand-title {
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(to bottom, #ffffff 30%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+        }
+
+        /* Glass Cards for the 3 Columns */
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #d4af37; /* Gold accent from poster */
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: scale(1.02);
+        }
+
+        /* Futuristic Button Styling */
+        .cta-button {
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 flex justify-between items-center sticky top-0 z-50 bg-black/50 backdrop-blur-md">
+        <div class="text-2xl font-black italic tracking-tighter text-white">
+            AURIVON <span class="text-blue-500">CAPITAL</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+            <a href="index.html" class="text-blue-400">Home</a>
+            <a href="course.html" class="hover:text-blue-400 transition">Course</a>
+            <a href="recruitment.html" class="hover:text-blue-400 transition">Recruitment</a>
+            <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 text-center">
+        <header class="mb-20">
+            <h2 class="brand-title text-xl md:text-2xl font-bold uppercase mb-2">Aurivon Capital Presents:</h2>
+            <h1 class="gold-gradient-text text-6xl md:text-8xl mb-6 uppercase">The Trading Suite</h1>
+            <p class="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+                Singapore’s premier co-working ecosystem engineered for <br class="hidden md:block">
+                Proprietary Traders and Market Professionals.
+            </p>
+        </header>
+
+        <div class="grid md:grid-cols-3 gap-8 text-left mb-20">
+            <div class="feature-card p-8 rounded-xl">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-network-wired text-yellow-500 text-2xl mr-4"></i>
+                    <h3 class="text-xl font-bold uppercase tracking-wider text-yellow-500">Infrastructure:</h3>
+                </div>
+                <p class="text-slate-200 leading-relaxed text-lg">Ultra-low latency fiber backbone engineered for institutional execution.</p>
+            </div>
+
+            <div class="feature-card p-8 rounded-xl">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-users text-yellow-500 text-2xl mr-4"></i>
+                    <h3 class="text-xl font-bold uppercase tracking-wider text-yellow-500">Community:</h3>
+                </div>
+                <p class="text-slate-200 leading-relaxed text-lg">An elite network of FX and Gold veterans sharing real-time market alpha.</p>
+            </div>
+
+            <div class="feature-card p-8 rounded-xl">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-chart-line text-yellow-500 text-2xl mr-4"></i>
+                    <h3 class="text-xl font-bold uppercase tracking-wider text-yellow-500">Opportunity:</h3>
+                </div>
+                <p class="text-slate-200 leading-relaxed text-lg">Direct capital funding and performance-led hiring pipelines.</p>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <a href="mailto:support@aurivoncapital.com" class="cta-button inline-block px-16 py-6 rounded-full text-xl font-black uppercase tracking-widest text-white italic shadow-2xl">
+                Join the Waitlist
+            </a>
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-slate-500 text-xs uppercase tracking-widest">
+        &copy; 2026 Aurivon Capital Singapore. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
